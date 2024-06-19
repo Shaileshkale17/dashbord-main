@@ -14,7 +14,11 @@ const TopNavber = () => {
       className={`w-full h-16 bg-[#151515] flex flex-row justify-between px-5 items-center `}>
       <div>
         <div className="relative ">
-          <img src={searchsvg} alt="" className="absolute top-3 right-3 " />
+          {search.length == 0 ? (
+            <img src={searchsvg} alt="" className="absolute top-3 right-3 " />
+          ) : (
+            ""
+          )}
           <input
             type="search"
             name=""
